@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from project.app.views import *
+from app.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('admin/', ReactView.as_view(), name='anything'),
+    path('', ReactView.as_view(), name='anything'),
 ]
